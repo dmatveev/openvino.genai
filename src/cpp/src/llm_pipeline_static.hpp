@@ -52,6 +52,9 @@ private:
 
     bool m_is_chat_conversation = false;
     ChatHistory m_history;
+
+    std::shared_ptr<ov::Model> kvcache_model;
+    std::shared_ptr<ov::Model> prefill_model;;
 };
 
 }  // namespace genai
